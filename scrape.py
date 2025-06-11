@@ -1,7 +1,7 @@
 import selenium.webdriver as webdriver
 from selenium.webdriver.chrome.service import Service
 import time
-from webbrowser import BeautifulSoup
+from bs4 import BeautifulSoup
 
 def scrape_website(website):
     print("Launching chrome browser...")
