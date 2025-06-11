@@ -27,8 +27,10 @@ if "dom_content" in st.session_state:
 
     if st.button("Parse Content"):
         if parse_description:
-            st.write("Parsing the content")
+            st.write("Parsing the content...")
 
-            dom_chunks = split_dom_content(st.session_state.dom_control)
+            if 'dom_control' not in st.session_state:
+                st.session_state.dom_control = ""
+            dom_chunks = split_dom_content(st.session_state.dom_content)
             parsed_result = parse_with_ollama(dom_chunks, parse_description)
             st.write(parsed_result)
