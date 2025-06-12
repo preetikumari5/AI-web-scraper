@@ -4,4 +4,4 @@ An AI web scraper which scrapes the site based on the URL you give it, grabs the
 
 
 
-<a href = "https://preetikumari5-ai-web-scraper-main-hnxedn.streamlit.app/">AI web Scraper><\a>
+<a href = "https://preetikumari5-ai-web-scraper-main-hnxedn.streamlit.app/">AI web Scraper<\a>
